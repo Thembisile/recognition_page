@@ -15,7 +15,7 @@ function App() {
     setMember({
       name: 'Shaun Damon',
       photo: 'IMG_0230.JPG',
-      accomplishments: 'Completed 5 tasks ahead of schedule.'
+      accomplishments: 'Completed 5 tasks ahead of the sprint.Happy working with you!'
     });
   }, []);
 
