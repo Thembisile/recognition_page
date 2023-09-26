@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+**Project Name**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+RecognizeMe - Member of the Week!
 
-## Available Scripts
+**Description**
 
-In the project directory, you can run:
+A simple React app that mimicks a celebration for a Member in our team that has been recognized for the week's effort and work.
 
-### `npm start`
+**Features**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Confetti animation
+* Team member reveal
+* Animated text
+* Drumroll and applause audio effects
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Additional Information**
 
-### `npm test`
+The `MemberCard` component uses a technique called **staggered animation** to animate the team member's information. Staggered animation is a type of animation where each element in a list is animated one at a time, with a delay between each animation. This can create a more interesting and engaging animation than simply animating all of the elements at once.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To implement staggered animation in the `MemberCard` component, we use the `useEffect` hook to create a list of timers. Each timer is set to call the `setShowElements` state function to show one of the team member's elements after a certain delay.
 
-### `npm run build`
+We also use a function called `animateWords` to split the team member's name and accomplishments into individual words and animate each word separately. This creates a more dynamic and eye-catching animation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Getting Started**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get started, clone the repository and install the dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/your-username/surprise-me.git
+cd surprise-me
+npm install
+```
 
-### `npm run eject`
+Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open your browser and navigate to `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Usage**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Click the **Reveal Member of The Week** button to generate a confetti explosion and reveal a team member's that is being recognized.
 
-## Learn More
+**Customization**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can customize the app by editing the `components/MemberCard.js` file. This file contains the code for displaying the team member's information.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can also change the colors of the confetti and the animated text by editing the `styles.css` file.
 
-### Code Splitting
+**Deployment**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To deploy the app to production, you can use a service such as Vercel or Netlify.
 
-### Analyzing the Bundle Size
+**License**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the MIT license.
 
-### Making a Progressive Web App
+**Contributions**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Welcome! Feel free to contribute to this project by submitting bug reports, feature requests, or pull requests.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
